@@ -24,6 +24,9 @@ groundhog.library(pkg, "2026-09-21") # Remember to update groundhog day.
 use_git_config(user.name = "mhirsch02", 
                user.email = "michellehirsch8@gmail.com")
 use_git() # This initializes a Git repository
+# During this step, as per the tutorial instructions, I created an R script
+  # "test.R" to play around with committing changes to Git and viewing the
+  # commit history.
 
 # CONNECT RSTUDIO AND GITHUB ####
 create_github_token() 
@@ -32,6 +35,13 @@ gitcreds_set() # Store personal access token to connect to GitHub
 
 # CONNECT THIS PROJECT TO GITHUB ####
 use_github()
+
+# PUSHING RSTUDIO CODE INTO GITHUB ####
+# In test.R, I made a few objects and did some math using them.
+# This is the code I will push to GitHub.
+
+# PULLING GITHUB CODE INTO RSTUDIO ####
+
 
 # Note that I am just including the above code as proof of completion, although
   # these commands only need to be executed once to successfully connect
