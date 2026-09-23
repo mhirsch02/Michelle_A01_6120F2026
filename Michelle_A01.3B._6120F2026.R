@@ -30,19 +30,22 @@ use_git() # This initializes a Git repository
 
 # CONNECT RSTUDIO AND GITHUB ####
 create_github_token() 
-gitcreds_set() # Store personal access token to connect to GitHub
+gitcreds_set() # Store personal access token to connect to GitHub.
 # Now I have credentials, enabling me to sync between RStudio and GitHub!
 
 # CONNECT THIS PROJECT TO GITHUB ####
 use_github()
 
 # PUSHING RSTUDIO CODE INTO GITHUB ####
-# In test.R, I made a few objects and did some math using them.
+# In 'test.R,' I made a few objects and did some math using them.
 # This is the code I will push to GitHub.
 
 # PULLING GITHUB CODE INTO RSTUDIO ####
-
+# Directly within GitHub, I edited the code in 'test.R' (added a comment:
+  # "Hi there!").
+# Now, within the test.R code here, click the pull arrow (blue, downwards)
+  # to pull the code from GitHub into R script.
 
 # Note that I am just including the above code as proof of completion, although
-  # these commands only need to be executed once to successfully connect
+  # certain commands only need to be executed once to successfully connect
   # the two.
