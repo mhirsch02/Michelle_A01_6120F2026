@@ -5,3 +5,5 @@ c <- -3
 solution <- a + b + c
 
 print(solution)
+
+# Hi there!
