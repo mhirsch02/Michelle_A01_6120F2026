@@ -17,10 +17,22 @@
 # For more information on the groundhog package,
 # see: https://groundhogr.com/
 library("groundhog")
-pkg <- c("usethis") 
+pkg <- c("usethis", "gitcreds") 
 groundhog.library(pkg, "2026-09-21") # Remember to update groundhog day.
 
 # CONFIGURE GIT ####
 use_git_config(user.name = "mhirsch02", 
                user.email = "michellehirsch8@gmail.com")
 use_git() # This initializes a Git repository
+
+# CONNECT RSTUDIO AND GITHUB ####
+create_github_token() 
+gitcreds_set() # Store personal access token to connect to GitHub
+# Now I have credentials, enabling me to sync between RStudio and GitHub!
+
+# CONNECT THIS PROJECT TO GITHUB ####
+use_github()
+
+# Note that I am just including the above code as proof of completion, although
+  # these commands only need to be executed once to successfully connect
+  # the two.
